@@ -114,12 +114,12 @@
     <footer>
         <p>
             Projeto construído para fins didáticos, com o objetivo de colocar em
-            prática os conhecimentos de HTML, CSS e JavaScript aprendidos na DIO._
+            prática os conhecimentos de HTML, CSS e JavaScript.
         </p>
         <img src="assets/images/footer/logo.svg" alt="">
     </footer>
 
-    <audio id="music" src="assets/musics/normal-world.mpeg" autoplay></audio>
+    <audio id="music" src="./assets/musicas/musics_normal-world.mpeg" autoplay></audio>
 
     <script>
         window.addEventListener('click', function () {
@@ -136,7 +136,7 @@
             const music = theme === 'light-theme' ? 'normal-world.mpeg' : 'inverted-world.mpeg'
 
             const audio = document.getElementById('music');
-            audio.src = `assets/musics/${music}`;
+            audio.src = `assets/musicas/${music}`;
             audio.play();
             audio.volume = 0.2;
         }
